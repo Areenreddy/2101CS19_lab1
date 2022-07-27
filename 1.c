@@ -13,6 +13,9 @@ int main() {
         case '+':
           printf("%.1lf + %.1lf = %.1lf", x, y, x + y);
           break;
+        case '-':
+          printf("%.1lf - %.1lf = %.1lf", x, y, x - y);
+          break;
     }
     
     return 0;
