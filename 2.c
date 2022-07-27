@@ -25,3 +25,23 @@ void swap(int *a, int *b){
     *a = *b;
     *b = temp;
 }
+
+void sort_by_selection_and_print(int array[], int n){
+
+    for (int step = 0; step < n - 1; step++){
+        int min_idx = step;
+        for (int i = step + 1; i < n; i++){
+
+            if (array[i] < array[min_idx]){
+                min_idx = i;
+            }
+        }
+
+        swap(&array[min_idx], &array[step]);
+    }
+
+    for (int i = 0; i < n; ++i){
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
