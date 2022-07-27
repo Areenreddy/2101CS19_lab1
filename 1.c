@@ -1,5 +1,13 @@
 #include <stdio.h>
 
 int main() {
-   return 0;
+    
+    char operation;
+    double x, y;
+    printf("Enter an operator (+, -, *, /) : ");
+    scanf("%c", &operation);
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &x, &y);
+    
+    return 0;
 }
