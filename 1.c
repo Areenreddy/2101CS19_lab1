@@ -16,6 +16,14 @@ int main() {
         case '-':
           printf("%.1lf - %.1lf = %.1lf", x, y, x - y);
           break;
+        case '*':
+          printf("%.1lf * %.1lf = %.1lf", x, y, x * y);
+          break;
+        case '/':
+          printf("%.1lf / %.1lf = %.1lf", x, y, x / y);
+          break;
+        default:
+          printf("Error");
     }
     
     return 0;
